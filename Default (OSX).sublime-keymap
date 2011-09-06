@@ -6,7 +6,6 @@
     { "keys": ["super+shift+down"], "command": "duplicate_line" },
 	{ "keys": ["super+e"], "command": "insert_snippet", "args": {"contents": "<?php echo $1; ?>$2"}},
 	{ "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
-    { "keys": ["super+d"], "command": "delete_line" },
 	{ "keys": ["super+d"], "command": "expand_selection", "args": {"to": "word"} },
 	{ "keys": ["super+d"], "command": "expand_selection", "args": {"to": "scope"},  "context":
 		[
@@ -30,5 +29,13 @@
 		[
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
 		]
+	},
+
+	// Alignment
+	{ "keys": ["super+l"], "command": "alignment" ,  "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
 	}
+
 ]
