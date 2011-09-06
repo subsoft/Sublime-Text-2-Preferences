@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+\$this->set(\$d);$1
+]]></content>
+	<tabTrigger>set</tabTrigger>
+</snippet>

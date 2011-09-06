@@ -1,0 +1,34 @@
+[
+	{ "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto"} },
+	{ "keys": ["super+t"], "command": "auto_complete" },
+	{ "keys": ["super+shift+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+	{ "keys": ["super+shift+d"], "command": "find_all_under" },
+    { "keys": ["super+shift+down"], "command": "duplicate_line" },
+	{ "keys": ["super+e"], "command": "insert_snippet", "args": {"contents": "<?php echo $1; ?>$2"}},
+	{ "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    { "keys": ["super+d"], "command": "delete_line" },
+	{ "keys": ["super+d"], "command": "expand_selection", "args": {"to": "word"} },
+	{ "keys": ["super+d"], "command": "expand_selection", "args": {"to": "scope"},  "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	},
+	{
+	  "keys": ["super+,"],"args": {}, "command": "zen_as_you_type",
+	  "context": [
+	    {
+	      "operand": "source.css - source.css.embedded, text.xml, text.html -source -meta.tag, meta.scope.between-tag-pair.html -source",
+	      "operator": "equal",
+	      "match_all": true,
+	      "key": "selector"
+	    }
+	  ]
+	},
+
+	// Zen coding
+	{ "keys" : ["super+e"],"command" : "wrap_zen_as_you_type",  "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	}
+]
