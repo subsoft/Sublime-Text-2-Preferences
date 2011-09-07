@@ -24,7 +24,10 @@
 	  ]
 	},
 
-	// Zen coding
+	/*
+	* Zen coding
+	* http://www.sublimetext.com/forum/viewtopic.php?f=2&t=2633
+	**/ 
 	{ "keys" : ["super+e"],"command" : "wrap_zen_as_you_type",  "context":
 		[
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
@@ -36,6 +39,13 @@
 		[
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
 		]
-	}
+	},
+
+	/**
+	* Increment
+	* https://github.com/rmaksim/Sublime-Text-2-Solutions/
+	**/
+	{ "keys": ["super+up"],  "command": "inc_dec_number", "args": { "delta": 1} },
+    { "keys": ["super+down"], "command": "inc_dec_number", "args": { "delta": -1} }
 
 ]
