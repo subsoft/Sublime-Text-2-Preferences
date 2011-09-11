@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-<?php \$this->set('title_for_layout',"$1"); ?>
+<?php echo \$this->Html->link("$1",array('action'=>'$2',${3:'controller'=>'$4'})); ?>$5
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>title</tabTrigger>
+	<tabTrigger>link</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

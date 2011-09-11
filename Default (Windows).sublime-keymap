@@ -1,2 +1,53 @@
 [
+	{ "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto"} },
+	{ "keys": ["ctrl+t"], "command": "auto_complete" },
+	{ "keys": ["ctrl+shift+t"], "command": "console_start" },
+	{ "keys": ["ctrl+shift+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+	{ "keys": ["ctrl+shift+d"], "command": "find_all_under" },
+	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment" },
+    { "keys": ["ctrl+shift+down"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<?php echo $1; ?>$2"}},
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	{ "keys": ["ctrl+d"], "command": "expand_selection", "args": {"to": "word"} },
+	{ "keys": ["ctrl+d"], "command": "expand_selection", "args": {"to": "scope"},  "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	},
+	{
+	  "keys": ["ctrl+,"],"args": {}, "command": "zen_as_you_type",
+	  "context": [
+	    {
+	      "operand": "source.css - source.css.embedded, text.xml, text.html -source -meta.tag, meta.scope.between-tag-pair.html -source",
+	      "operator": "equal",
+	      "match_all": true,
+	      "key": "selector"
+	    }
+	  ]
+	},
+
+	/*
+	* Zen coding
+	* http://www.sublimetext.com/forum/viewtopic.php?f=2&t=2633
+	**/ 
+	{ "keys" : ["ctrl+e"],"command" : "wrap_zen_as_you_type",  "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	},
+
+	// Alignment
+	{ "keys": ["ctrl+l"], "command": "alignment" ,  "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	}
+
+	/**
+	* Increment
+	* https://github.com/rmaksim/Sublime-Text-2-Solutions/
+	**/
+	// { "keys": ["ctrl+up"],  "command": "inc_dec_number", "args": { "delta": 1} },
+ //    { "keys": ["ctrl+down"], "command": "inc_dec_number", "args": { "delta": -1} }
+
 ]
