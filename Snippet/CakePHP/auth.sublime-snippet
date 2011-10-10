@@ -1,8 +1,6 @@
 <snippet>
-	<content><![CDATA[
-<?php echo \$this->Html->link("$1",array('action'=>'$2'${3:,'controller'=>'$4'})); ?>$5
-]]></content>
+	<content><![CDATA[ \$this->Auth->user("${1:id}");]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>link</tabTrigger>
+	<tabTrigger>auth</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 </snippet>

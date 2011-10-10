@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[<%= link_to "$1", :action=>'$2'${3:, :id => subject.id} %>]]></content>
+    <tabTrigger>link</tabTrigger>
+    <scope>text.html.ruby</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[<% @${1:item}s.each do |${1}| %>
+    ${2}
+<% end %>]]></content>
+    <tabTrigger>each</tabTrigger>
+    <scope>text.html.ruby</scope>
+    <description>for each loop in rhtml</description>
+</snippet>

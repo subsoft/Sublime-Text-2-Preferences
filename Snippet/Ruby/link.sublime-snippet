@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[<%= ${1} %>]]></content>
+    <tabTrigger>e</tabTrigger>
+    <scope>text.html.ruby</scope>
+    <description>for each loop in rhtml</description>
+</snippet>

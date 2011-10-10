@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+function admin_index(){
+	\$d['items'] = \$this->Paginate('${1:Model}'); 
+	\$this->set(\$d);
+}
+
+function admin_edit(\$id=null){
+	if(!empty(\$this->request->data)){
+		if(\$this->${1:Model}->save(\$this->request->data)){
+			\$this->Session->setFlash("Le ${2:Name} a bien été sauvegardé","notif");
+			\$this->redirect(array('action'=>'index')); 
+		}else{
+			\$this->Session->setFlash("Le ${2:Name} n'a pas pu être sauvegardé","notif");
+		}
+	}elseif(\$id != null){
+		\$this->${1:Model}->id = \$id;
+		\$this->request->data = \$this->${1:Model}->read();
+	}
+}
+
+function admin_delete(\$id){
+	\$this->${1:Model}->delete(\$id);
+	\$this->Session->setFlash("Le ${2:Name} a bien été supprimé","notif");
+	\$this->redirect(\$this->referer());
+}
+
+]]></content>
+	<tabTrigger>admin</tabTrigger>
+</snippet>
+admin

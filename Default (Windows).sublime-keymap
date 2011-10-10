@@ -6,14 +6,32 @@
 	{ "keys": ["ctrl+shift+d"], "command": "find_all_under" },
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment" },
     { "keys": ["ctrl+shift+down"], "command": "duplicate_line" },
-	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<?php echo $1; ?>$2"}},
+	
+	// Ctrl + e => <?php echo ?> or <%= %>
+	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<?php echo ${1}; ?>${2}"},
+		"context": [{
+	      "operand": "source.php, text.html",
+	      "operator": "equal",
+	      "match_all": true,
+	      "key": "selector"
+	    }]
+	},
+	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<%= ${1} %>${2}"},
+		"context": [{
+	      "operand": "text.html.ruby",
+	      "operator": "equal",
+	      "match_all": true,
+	      "key": "selector"
+	    }]
+	},
+
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 	{ "keys": ["ctrl+d"], "command": "expand_selection", "args": {"to": "word"} },
 	{ "keys": ["ctrl+d"], "command": "expand_selection", "args": {"to": "scope"},  "context":
 		[
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
 		]
-	},
+	},	
 	{
 	  "keys": ["ctrl+,"],"args": {}, "command": "zen_as_you_type",
 	  "context": [
@@ -48,6 +66,12 @@
 	* https://github.com/rmaksim/Sublime-Text-2-Solutions/
 	**/
 	// { "keys": ["ctrl+up"],  "command": "inc_dec_number", "args": { "delta": 1} },
- //    { "keys": ["ctrl+down"], "command": "inc_dec_number", "args": { "delta": -1} }
+ 	//    { "keys": ["ctrl+down"], "command": "inc_dec_number", "args": { "delta": -1} }
 
+ 	/**
+ 	* Code folding
+ 	*
+ 	{ "keys": ["ctrl+keypad_minus"], "command": "fold" },
+	{ "keys": ["ctrl+keypad_plus"], "command": "unfold" }
+	*/
 ]
