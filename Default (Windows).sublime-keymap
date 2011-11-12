@@ -59,7 +59,7 @@
 		[
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
 		]
-	}
+	},
 
 	/**
 	* Increment
@@ -70,8 +70,8 @@
 
  	/**
  	* Code folding
- 	*
- 	{ "keys": ["ctrl+keypad_minus"], "command": "fold" },
+ 	*/
+ 	{ "keys": ["ctrl+keypad_minus"], "command": "fold_by_level", "args": {"level": 2} },
 	{ "keys": ["ctrl+keypad_plus"], "command": "unfold" }
-	*/
+	
 ]
