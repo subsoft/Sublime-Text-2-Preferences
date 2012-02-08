@@ -1,4 +1,5 @@
 [
+	{ "keys": ["ctrl+alt+n"], "command": "new_window" },
 	{ "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto"} },
 	{ "keys": ["ctrl+t"], "command": "auto_complete" },
 	{ "keys": ["ctrl+shift+t"], "command": "console_start" },
@@ -72,6 +73,17 @@
  	* Code folding
  	*/
  	{ "keys": ["ctrl+keypad_minus"], "command": "fold_by_level", "args": {"level": 2} },
-	{ "keys": ["ctrl+keypad_plus"], "command": "unfold" }
+	{ "keys": ["ctrl+keypad_plus"], "command": "unfold" },
 	
+	/**
+	* Google Search
+	**/
+	{    "keys": ["ctrl+shift+g"], "command": "google_search" },
+
+
+	/**
+	* Nettuts Fetch 
+	**/
+	{    "keys": ["ctrl+shift+e"], "command": "fetch" }
+
 ]

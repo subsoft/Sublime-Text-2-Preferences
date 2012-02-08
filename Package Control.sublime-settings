@@ -1,3 +1,16 @@
 {
-	"auto_upgrade_last_run": 1321125814
+	"auto_upgrade_last_run": 1328697182,
+	"installed_packages":
+	[
+		"Alignment",
+		"google-search",
+		"LiveReload",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Prefixr",
+		"SideBarGit",
+		"SublimeCodeIntel",
+		"Theme - Soda",
+		"ZenCoding"
+	]
 }

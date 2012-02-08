@@ -3,4 +3,5 @@
 \$this->Session->setFlash("$1","${2:notif}");$3
 ]]></content>
 	<tabTrigger>flash</tabTrigger> 
+	<scope>source.php</scope>
 </snippet>

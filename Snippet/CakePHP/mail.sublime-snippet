@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+App::uses('CakeEmail', 'Network/Email');
+\$cakeMail = new CakeEmail();
+\$cakeMail->from('contact@grafikart.fr')->to($1)->subject($2)
+	->template('mdp')->viewVars(array($3))
+	->emailFormat('html')
+	->send();]]></content>
+	<tabTrigger>mail</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

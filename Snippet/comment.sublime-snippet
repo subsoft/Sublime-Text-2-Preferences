@@ -2,6 +2,6 @@
 	<content><![CDATA[/**
 * $1
 **/]]></content>
-    <scope>source.php</scope>
+    <scope>source.php, source.js</scope>
 	<tabTrigger>cc</tabTrigger>
 </snippet>

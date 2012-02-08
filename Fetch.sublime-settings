@@ -1,0 +1,13 @@
+{
+	"files":
+	{
+		"jquery": "http://code.jquery.com/jquery.min.js"
+	},
+	"packages":
+	{
+		"CakePHP": "https://github.com/cakephp/cakephp/zipball/master",
+		"WPHP": "git@github.com:Grafikart/WPHP-Framework.git",
+		"Wordpress": "http://fr.wordpress.org/latest-fr_FR.zip",
+		"html5-boilerplate": "http://github.com/h5bp/html5-boilerplate/zipball/v2.0stripped"
+	}
+}
